@@ -1,5 +1,5 @@
 # class linkedlist:
 #     def node(self):
 
-print("hrllo")
+print("updated  linkedlist file")
         
