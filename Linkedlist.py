@@ -16,28 +16,28 @@ class LinkedList :
                 counter =counter.next
             counter.next=node
     
-    def remove_last (self):
+    def remove_last(self):
         if self.head is None :
             print('--NOTHING TO REMOVE-- ')
-        else :
+        elif self.head.next is None :
+            self.head = None
+        else : 
             current = self.head
-            while current.next :
+            while current.next.next :
                 current=current.next
-            current.value = None
-    
-    
+            current.next = None
+
 
 l=LinkedList()
-a=Node(7)
-b=Node(9)
-c=Node(10)
-d=Node(9)
+a=Node(10)
 l.add_node(a)
+b=Node(2)
 l.add_node(b)
+c=Node(9)
 l.add_node(c)
-l.add_node(d)
+
 l.remove_last()
 current=l.head
 while current :
     print(current.value)
-    current=current.next
+    current=current.next 
