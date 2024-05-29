@@ -19,8 +19,10 @@ class LinkedList :
 l=LinkedList()
 a=Node(1)
 b=Node(5)
+c=Node(4)
 l.add_node(a)
 l.add_node(b)
+l.add_node(c)
 
 print(l)
 current =l.head
